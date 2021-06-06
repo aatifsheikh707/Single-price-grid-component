@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+body {
+  background-color: #E6EFF6;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+.one {
+  background-color: white;
+  width: 100%;
+  color: hsl(218, 22%, 67%);
+  padding: 30px;
+  padding-bottom: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-left: 40px;
+  font-weight: 700;
+
+}
+
+.one p {
+  line-height: 1.5;
+}
+ 
+
+
+.one h2 {
+  color: hsl(179, 62%, 43%);
+}
+
+
+
+
+
+
+.one h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+
+
+
+
+
+
+
+.two  {
+  color: hsl(204, 43%, 93%);
+  background-color: #2BB3B1;
+  flex-grow: 1;
+  padding: 30px;
+  border-bottom-left-radius: 12px;
+  padding-left: 40px;
+  position: relative;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+
+.two p {
+  margin-top: 0;
+}
+
+
+
+
+.two h1, .per_month {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.per_month {
+  
+  margin-left: 10px;
+  color: hsl(179, 51%, 75%);
+  position: absolute; 
+  bottom: 54%;
+}
+
+
+
+
+.button {
+  display: inline-block;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  padding: 15px 90px;
+  border-radius: 8px;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+
+
+.three  {
+  color: hsl(204, 43%, 93%);
+  background-color: #4ABEBD;
+  flex-grow: 1;
+  padding: 30px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  border-bottom-right-radius: 12px;
+  font-size: 15px;
+  padding-right: 60px;
+}
+
+.three p {
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    max-width: 375px;
+    margin: 5vh auto;
+  }
+  .container > * {
+    
+    flex-basis: 100%;
+  }
+
+  .three {
+    border-bottom-left-radius: 12px;
+    padding-right: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .two {
+    border-bottom-left-radius: 0px;
+    padding-top: 10px;
+    padding-right: 0%;
+  }
+
+  .per_month {
+  
+    bottom: 52%;
+  }
+}
+
